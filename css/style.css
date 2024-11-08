@@ -1,0 +1,271 @@
+:root {
+    /* fuentes */
+    --Fuente-titulo: "Lobster", serif;
+    --fuente-2: "Poppins", sans-serif;
+    --fuente-3: "Roboto", serif;
+    /* colores */
+    --color-fondo: #121212;
+    --color-boton: #FF6F61;
+    --color-precio: #FFFFFF;
+    --color-caja-producto: #1F1F1F;
+    --color-borde: #333333;
+    --color-footer: #222222;
+    --color-texto: #E0E0E0;
+    --color-logo: #FFEB3B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: var(--color-fondo);
+    font-family: var(--fuente-3);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-caja-producto);
+    padding: 50px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 50px;
+    color: var(--color-logo);
+    font-family: var(--Fuente-titulo);
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    margin-top: 1rem;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 30px;
+    color: var(--color-texto);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 30px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*Estilo para el carrito*/
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: var(--color-precio);
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width:100% ;
+}
+
+th, td{
+    color: var(--color-fondo);
+}
+
+.borrar{
+    background-color: var(--color-boton);
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/*estilo para el banner*/
+
+.banner{
+    display: flex;
+   margin-top: 3rem;
+   border-radius: 20px;
+    width: 1300px;
+    height: 500px;
+    background: url(/img/bane.png);
+}
+
+/*Seccion de Ofertas*/
+
+.oferta{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.oferta-1{
+display: flex;
+align-items: center;
+flex-basis: calc(33,3% - 15px);
+background-color: var(--color-precio);
+padding: 35px;
+border-radius: 10px;
+}
+
+.oferta-img{
+    flex-basis: 50%;
+    margin-right: 15px;
+    box-shadow: -4px -9px 11px 6px rgba(46, 46, 46, 0.75);
+    border-radius: 10px;
+}
+
+.oferta-img img{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.oferta-txt{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.oferta-txt h3{
+    color: var(--color-footer);
+    font-family: var(--fuente-3);
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: var(--color-boton);
+    color: var(--color-precio);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+.productos{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos h2{
+    color: var(--color-texto);
+    font-family: var(--fuente-2);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom:50px;
+}
+
+.producto-contenido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.produto{
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.produto img{
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.produto h3{
+    font-size: 20px;
+    color: var(--color-texto);
+    font-family: var(--fuente-3);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.produto p, .precio{
+    font-size: 16px;
+    color: var(--color-precio);
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 900;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: var(--color-footer);
+}
+
+.footer-contenido{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+ font-size: 18px;
+ color: var(--color-texto);
+ font-family: var(--fuente-3);
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.link a{
+    font-size: 16px;
+    color: var(--color-precio);
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
