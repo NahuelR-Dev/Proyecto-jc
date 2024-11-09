@@ -391,7 +391,7 @@ td {
     justify-content: center;
     gap: 10px;
     margin-top: 5rem;
-    
+
 }
 
 .reseña {
@@ -410,13 +410,6 @@ td {
 }
 
 
-
-
-
-
-
-
-
 .estrellas {
     display: flex;
     gap: 10px;
@@ -432,4 +425,82 @@ td {
 
 .estrella.seleccionada {
     color: gold;
+}
+
+
+
+/* Parte de nosotros*/
+
+.noosotros {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.noosotros h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: var(--color-texto);
+    font-family: var(--fuente-2);
+    font-weight: 600;
+}
+
+.noosotros p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: var(--color-texto);
+    max-width: 1300px;
+}
+
+
+.equipo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    background-color: var(--color-caja-producto);
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    width: 270px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.miembro:hover {
+    transform: translateY(-10px);
+}
+
+.miembro img {
+    border-radius: 50%;
+}
+
+.miembro h3 {
+    font-size: 30px;
+    color: var(--color-texto);
+    font-family: var(--fuente-2);
+    margin-bottom: 10px;
+}
+
+.miembro p {
+    font-size: 20px;
+    color: var(--color-texto);
+    font-family: var(--fuente-2);
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    .equipo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .miembro {
+        width: 60%;
+        margin-bottom: 20px;
+    }
 }

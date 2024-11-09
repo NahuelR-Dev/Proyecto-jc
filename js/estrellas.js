@@ -107,5 +107,5 @@ estrellasElementos.forEach(estrella => {
     estrella.addEventListener('click', seleccionarEstrella);
 });
 
-// Mostrar reseñas al cargar la página
+
 window.addEventListener('DOMContentLoaded', mostrarReseñas);
