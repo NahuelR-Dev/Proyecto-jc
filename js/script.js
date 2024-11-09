@@ -69,3 +69,7 @@ function vaciarCarrito() {
     }
     return false;
 }
+
+
+
+
