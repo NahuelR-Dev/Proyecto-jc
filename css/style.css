@@ -663,6 +663,27 @@ td {
     transform: translateY(-300%);
 }
 
+/*Mq del formulario*/
+
+@media (max-width: 750px){ 
+    .conte-form{
+        height: auto;
+        flex-direction: column;
+    }
+    .informacion{
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+
+    .form-informacion{
+    width: auto;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;  
+    }
+
+ }
 
 
 
