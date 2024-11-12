@@ -66,3 +66,34 @@ btncambio.addEventListener("click", e =>{
             fotoPerfil = null; // reinicio la foto de perfil
         });
     });
+
+
+    /*Iniciar sesion*/
+
+    document.addEventListener("DOMContentLoaded", 
+            
+        function() {
+        const inicioFormu = document.getElementById("inicio-formulario");
+        const errorMessage = document.getElementById("mensaje-error");
+
+        //el manejo del formulario
+        inicioFormu.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            // agarra el formulario iniciosecion
+            const inicioEmail = document.getElementById("inicio-Email").value;
+            const inicioContra = document.getElementById("inicio-contra").value;
+
+            // agarra los datos guardados del local storage
+            const usuarioGuardado = JSON.parse(localStorage.getItem("usuario"));
+
+            // mira si los datos del localstorage estan bien 
+            if (usuarioGuardado && usuarioGuardado.email === inicioEmail && usuarioGuardado.contrasena === inicioContra) {
+                
+                window.location.href = "index.html"; // Si esta todo ok me manda al index
+            } else {
+                // Muestra el mensaje de error
+                errorMessage.style.display = "block";
+            }
+        });
+    });
