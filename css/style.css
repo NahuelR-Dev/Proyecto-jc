@@ -27,6 +27,8 @@ body {
     font-family: var(--fuente-3);
 }
 
+
+
 img {
     max-width: 100%;
 }
@@ -504,3 +506,76 @@ td {
         margin-bottom: 20px;
     }
 }
+
+
+
+/* CSS de Formulario Inicio y registro*/
+.completo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conte-form {
+    display: flex;
+    box-shadow: 0 5px 7px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    height: 500px;
+    max-width: 900px;
+    transition: all 2s ease;
+    margin: 10px;
+    border: solid var(--color-logo);
+}
+
+.informacion {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-caja-producto);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    color: var(--color-texto);
+}
+
+.info p {
+    margin: 15px 0;
+    color: var(--color-texto);
+}
+
+.info input {
+    background-color: transparent;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--color-texto);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    box-shadow: 0 7px 4px rgba(252, 252, 252, 0.1);
+}
+
+.info input:hover{
+    background-color: var(--color-boton);
+    color: var(--color-texto);
+    box-shadow: 0 5px 5px rgba(252, 252, 252, 0.1);
+}
+
+/*Css Registro*/
+
+
+
+
+
+
+
+ 
